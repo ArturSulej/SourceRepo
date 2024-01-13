@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Moja Aplikacja Webowa</title>
+</head>
+<body>
+    <h1>Artur Sulej</h1>
+    <p>Numer wersji: 1.0</p><br>
+    <p>Plik Dockerfile:</p><br>
+    <p>
+# Użyj oficjalnego obrazu nginx jako bazowego obrazu
+FROM nginx:latest
+
+# Skopiuj pliki źródłowe aplikacji do katalogu /usr/share/nginx/html
+COPY . /usr/share/nginx/html
+
+# Otwórz port 80 na zewnątrz kontenera
+EXPOSE 80
+<p>
+</body>
+</html>
